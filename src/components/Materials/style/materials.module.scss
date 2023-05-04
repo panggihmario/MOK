@@ -1,0 +1,32 @@
+.field {
+  &__label {
+    font-size: var(--font-base);
+    font-weight: var(--font-medium);
+    color: var(--charcoal-color);
+    letter-spacing: 0.01em;
+  }
+  &__container {
+    display: grid;
+    gap: 8px;
+  }
+  &__input {
+    display: flex;
+    background: var(--white-color);
+    border: 0.8px solid #BBBBBB;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 9px 12px;
+    height: 100%;
+    color: var(--charcoal-color);
+  }
+}
+
+input {
+  border: none;
+  width: 100%;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}

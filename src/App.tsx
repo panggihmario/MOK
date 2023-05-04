@@ -1,9 +1,9 @@
 
-import Todos from "./components/Todos"
-import NewTodo from './components/Newtodo';
-import TodosContextProvider from './store/todos-context';
-import styles from "./App.module.css";
-import Navigation from "./components/Navigation";
+// import Todos from "./components/Todos"
+// import NewTodo from './components/Newtodo';
+// import TodosContextProvider from './store/todos-context';
+// import styles from "./App.module.css";
+// import Navigation from "./components/Navigation";
 import { 
   createBrowserRouter, 
   RouterProvider, 
@@ -12,14 +12,6 @@ import Management from "./pages/ManageAccount/Management/index"
 import User from "./pages/ManageAccount/User/index"
 import RootLayout from "./Layouts";
 
-// const routeDefinitions = createRoutesFromElements(
-//   <Route>
-//     <Route path="/management" element={<Management/>} ></Route>
-//     <Route path="/user" element={<User/>} ></Route>
-//   </Route>
-// )
-
-// const router = createBrowserRouter(routeDefinitions)
 const router = createBrowserRouter([
   {
     path : '/',

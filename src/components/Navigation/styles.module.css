@@ -75,9 +75,16 @@
   text-decoration: none;
 }
 
+.menu__sublist-active {
+  font-size: var(--font-sm);
+  color: var(--primary-color);
+  font-weight: var(--font-normal);
+  text-decoration: none;
+  transition: color .3s ease-in;
+}
 
 
-.menu__list , .menu__sublist {
+.menu__list , .menu__sublist, .menu__sublist-active {
   padding: 13px 0;
   display: grid;
   grid-template-columns: max-content 1fr max-content;

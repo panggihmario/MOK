@@ -1,26 +1,38 @@
+import Label from "../Label/index"
+import React from "react"
+import style from "../style/materials.module.scss"
 type propsInput = {
   value : string,
   name : string,
-  onChange : (e : React.FormEvent) => void
+  onChange : (e : React.FormEvent) => void,
+  label? : string,
+  type? : string
 }
 
-const InputField = ({
+const InputField  : React.FC <propsInput> = ({
+  label,
   value,
   name,
-  onChange
-}: propsInput) => {
+  type = 'text',
+  onChange,
+}) => {
   return (
-    <div>
-        <label>label</label>
-        <input 
-          type="text" 
-          value={value}
-          name={name}
-          onChange={onChange}
-        />
+    <div className={style['field__container']}>
+        {label &&  <Label label={label} /> }
+        <div className={style['field__input']}>
+          <input 
+            type={type} 
+            value={value}
+            name={name}
+            onChange={onChange}
+          />
+        </div>
     </div>
-  
   )
+}
+
+InputField.defaultProps = {
+  type: 'text'
 }
 
 export default InputField

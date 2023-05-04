@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./styles.module.css"
 import { item } from "./menuModel"
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 type menuProps = {
   menu : item,
@@ -11,7 +11,6 @@ type menuProps = {
 }
 
 const Menu : React.FC< menuProps > = (props) => {
-
   return (
     <li  className="pointer">
       <div onClick={props.onActive} className={styles['menu__list']}>
@@ -24,19 +23,15 @@ const Menu : React.FC< menuProps > = (props) => {
           props.menu.items.map((item, idx) => {
             return (
               <li key={idx}  >
-                
-                <Link className={styles['menu__sublist']} to={item.path}>
+                <NavLink className={({isActive}) => isActive  ? styles['menu__sublist-active'] : styles['menu__sublist']  } to={item.path}>
                   <i className="fa-solid fa-desktop hidden"></i>
                   <div> {item.label} </div>
-                </Link>
-              
-
+                </NavLink>
               </li>
             )
           })
         }
       </ul>
-
     </li>
   )
 }
