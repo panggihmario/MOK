@@ -1,20 +1,20 @@
 
-
+@import "./utils/index.scss";
 :root {
 
   /* color */
 
-  --primary-color : #FF4265;
-  --secondary-color : #1890FF;
-  --success-color : #52C41A;
-  --grey-color : #E5E5E5;
-  --black-color : #000000;
-  --grey-color : #777777;
-  --charcoal-color : #4A4A4A;
-  --white-smoke : #EEEEEE;
-  --gainsboro : #DDDDDD;
-  --whitesnow : #FAFAFA;
-  --white-color : #FFFFFF;
+  --primary-color : #{$primary};
+  --secondary-color : #{$secondary};
+  --success-color : #{$success};
+  --grey-color : #{$grey};
+  --black-color : #{$black};
+  // --grey-color : #787878;
+  --charcoal-color : #{$charcoal};
+  --white-smoke : #{$whitesmoke};
+  --gainsboro : #{$whitesnow};
+  --white-color : #{$white};
+  
 
 /* font */
   --font-header : 1.5rem;

@@ -2,11 +2,15 @@ import { useState } from "react"
 import styles from "./styles.module.css"
 import menus from "./menuModel"
 import { item } from "./menuModel"
+import { useNavigate } from "react-router-dom"
 import Menu from "./menu"
 const Navigation = () => {
 
   const [items , setItems] = useState<item[]>(menus)
-
+  const navigate = useNavigate()
+  const navigateHandler = function ( ) {
+    navigate('/login')
+  }
   const handleActive = (menu : item) => {
     setItems( (prevState) => {
       return prevState.map((state) => {
@@ -48,7 +52,7 @@ const Navigation = () => {
           )
         }
       </ul>
-
+      <div onClick={navigateHandler} className={styles['menu__logout']}>Logout</div>
     </nav>
   )
 }

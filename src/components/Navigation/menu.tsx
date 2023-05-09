@@ -11,6 +11,8 @@ type menuProps = {
 }
 
 const Menu : React.FC< menuProps > = (props) => {
+  
+
   return (
     <li  className="pointer">
       <div onClick={props.onActive} className={styles['menu__list']}>

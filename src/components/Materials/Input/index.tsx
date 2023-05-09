@@ -1,6 +1,6 @@
 import Label from "../Label/index"
 import React from "react"
-import style from "../style/materials.module.scss"
+import style from "../../../styles/components/_input.module.scss"
 type propsInput = {
   value : string,
   name : string,
@@ -21,6 +21,7 @@ const InputField  : React.FC <propsInput> = ({
         {label &&  <Label label={label} /> }
         <div className={style['field__input']}>
           <input 
+            required
             type={type} 
             value={value}
             name={name}

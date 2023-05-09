@@ -57,8 +57,6 @@
 
 .sublists__open {
   max-height: 200px;
-  /* transition: 0.5s; */
-
 }
 
 .menu__list {
@@ -78,15 +76,29 @@
 .menu__sublist-active {
   font-size: var(--font-sm);
   color: var(--primary-color);
-  font-weight: var(--font-normal);
+  font-weight: var(--font-medium);
   text-decoration: none;
   transition: color .3s ease-in;
+  background-color: var(--whitesnow);
 }
-
 
 .menu__list , .menu__sublist, .menu__sublist-active {
   padding: 13px 0;
   display: grid;
   grid-template-columns: max-content 1fr max-content;
   gap: 8px;
+}
+
+.menu__logout {
+  position: absolute;
+  bottom: 20px;
+  left: 11px;
+  right: 11px;
+  background: var(--whitesnow);
+  color: var(--charcoal-color);
+  text-align: center;
+  padding: 8px;
+  font-size: 11px;
+  font-weight: var(--font-medium);
+  cursor: pointer;
 }

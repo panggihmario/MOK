@@ -11,6 +11,7 @@ import {
 import Management from "./pages/ManageAccount/Management/index"
 import User from "./pages/ManageAccount/User/index"
 import RootLayout from "./Layouts";
+import Login from "./pages/Authentication/login"
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       }
     ]
   },
+  {
+    path : '/login',
+    element : <Login/>
+  }
  
 ])
 
