@@ -20,17 +20,33 @@ $input-border : 0.8px;
     font-size: var(--font-base);
     font-weight: var(--font-normal);
     padding: 9px 12px;
-    height: 100%;
     color: var(--charcoal-color);
     &:focus-within {
       border: $input-border solid var(--secondary-color);
     }
   }
+  &__error {
+    border: $input-border solid var(--error-color);
+  }
+  &__error-message {
+    @extend .field__label;
+    color: var(--error-color);
+    transform: translateY(-25px);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+.message-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
 }
 
 input {
   border: none;
   width: 100%;
+  // background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% ;
   &:focus {
     outline: none;
   }

@@ -3,19 +3,18 @@
 :root {
 
   /* color */
-
   --primary-color : #{$primary};
   --secondary-color : #{$secondary};
   --success-color : #{$success};
   --grey-color : #{$grey};
   --black-color : #{$black};
-  // --grey-color : #787878;
   --charcoal-color : #{$charcoal};
   --white-smoke : #{$whitesmoke};
   --gainsboro : #{$whitesnow};
   --white-color : #{$white};
+  --whitesnow-color : #{$whitesnow};
+  --error-color : #{$error};
   
-
 /* font */
   --font-header : 1.5rem;
   --font-lg : 1.125rem;
@@ -69,7 +68,6 @@ p, h1, h2, h3, h4, h5, h6 {
 input, button, textarea, select {
   font: inherit;
 }
-
 
 .hidden {
   visibility: hidden ;

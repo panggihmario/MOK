@@ -1,5 +1,6 @@
 import InputField from "./Input";
-
+import Button from "./Button";
 export {
-  InputField
+  InputField,
+  Button as KipasButton
 }

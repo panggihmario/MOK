@@ -1,0 +1,36 @@
+@import "../index.scss";
+
+$height-medium : 32px;
+
+.btn {
+  display: block;
+  cursor: pointer;
+  border : 0;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  width: fit-content;
+  &__md {
+    height : $height-medium;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-size : var(--font-base);
+    font-weight : var(--font-medium);
+  }
+  &__default {
+    background-color: var(--whitesnow-color);
+    color : var(--charcoal-color)
+  }
+  &__primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+  }
+  &__secondary {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+  }
+  &__success {
+    background-color: var(--success-color);
+    color: var(--white-color);
+  }
+}

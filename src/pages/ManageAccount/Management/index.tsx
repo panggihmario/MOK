@@ -22,12 +22,14 @@ const Management = () => {
         <InputField
           name="username"
           label="Username"
+          id="username"
           value={username}
           onChange={(e) => handleChange(e)}
         />
       </div>
       <div style={{width : '300px'}}>
         <InputField
+          id="password"
           name="password"
           type="password"
           label="Password"
